@@ -1,0 +1,41 @@
+name: Ramelia Lotstid Monitor
+
+on:
+  schedule:
+    # Körs varje timme (du kan ändra detta)
+    - cron: '0 * * * *'
+  workflow_dispatch: # Tillåter manuell körning
+
+jobs:
+  check-ramelia:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout kod
+      uses: actions/checkout@v4
+      
+    - name: Sätt upp Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Installera dependencies
+      run: |
+        pip install playwright requests
+        playwright install chromium
+        playwright install-deps
+        
+    - name: Kör Ramelia scraper
+      run: python web_scraper.py
+      
+    - name: Spara tillstånd
+      uses: actions/upload-artifact@v3
+      with:
+        name: ramelia-state
+        path: ramelia_state.json
+        
+    - name: Skicka notifikation om ändring
+      if: success()
+      run: |
+        # Här lägger vi till Firebase push notification senare
+        echo "Kontroll genomförd framgångsrikt"
