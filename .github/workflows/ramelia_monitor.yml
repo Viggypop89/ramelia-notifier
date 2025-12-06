@@ -2,8 +2,8 @@ name: Ramelia Lotstid Monitor
 
 on:
   schedule:
-    # Körs varje timme (du kan ändra detta)
-    - cron: '0 * * * *'
+    # Körs 13 minuter över varje timme (undviker toppar vid heltimmar)
+    - cron: '13 * * * *'
   workflow_dispatch: # Tillåter manuell körning
 
 jobs:
@@ -37,6 +37,13 @@ jobs:
     - name: Installera Playwright system dependencies
       run: playwright install-deps chromium
       
+    - name: Ladda ner tidigare tillstånd
+      uses: actions/download-artifact@v4
+      continue-on-error: true
+      with:
+        name: ramelia-state
+        path: .
+    
     - name: Kör Ramelia scraper
       env:
         FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
