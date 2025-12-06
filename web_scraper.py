@@ -225,21 +225,10 @@ if __name__ == '__main__':
     print("🚢" + "="*68 + "🚢")
     print("   RAMELIA LOTSTID-ÖVERVAKNING MED PLAYWRIGHT")
     print("🚢" + "="*68 + "🚢")
-    print("\nTryck Ctrl+C för att avsluta\n")
     
-    try:
-        # Första kontrollen
-        check_for_changes()
-        
-        print(f"\n⏰ Nästa kontroll om 30 minuter...")
-        print("(Programmet körs i bakgrunden)\n")
-        
-        # Upprepa var 30:e minut
-        while True:
-            time.sleep(1800)  # 30 minuter = 1800 sekunder
-            check_for_changes()
-            print(f"\n⏰ Nästa kontroll om 30 minuter...")
-            
-    except KeyboardInterrupt:
-        print("\n\n👋 Övervakning avslutad av användare")
-        print("Hej då! 🚢")
+    # Kör EN GÅNG (perfekt för GitHub Actions)
+    # GitHub Actions kommer köra scriptet igen automatiskt varje timme
+    check_for_changes()
+    
+    print("\n✅ Kontroll slutförd!")
+    print("Nästa kontroll sker automatiskt om 1 timme (via GitHub Actions)\n")
