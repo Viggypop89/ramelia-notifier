@@ -18,13 +18,25 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+        cache: 'pip'  # Cachar pip-paket!
         
-    - name: Installera dependencies
-      run: |
-        pip install playwright requests
-        playwright install chromium
-        playwright install-deps
+    - name: Cache Playwright browsers
+      uses: actions/cache@v3
+      id: playwright-cache
+      with:
+        path: ~/.cache/ms-playwright
+        key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
         
+    - name: Installera Python dependencies
+      run: pip install -r requirements.txt
+        
+    - name: Installera Playwright browsers (om inte cachade)
+      if: steps.playwright-cache.outputs.cache-hit != 'true'
+      run: playwright install chromium
+      
+    - name: Installera Playwright system dependencies
+      run: playwright install-deps chromium
+      
     - name: Kör Ramelia scraper
       run: python web_scraper.py
       
