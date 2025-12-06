@@ -25,7 +25,7 @@ jobs:
       id: playwright-cache
       with:
         path: ~/.cache/ms-playwright
-        key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+        key: playwright-${{ runner.os }}-v2-${{ hashFiles('requirements.txt') }}
         
     - name: Installera Python dependencies
       run: pip install playwright==1.48.0 requests==2.31.0
