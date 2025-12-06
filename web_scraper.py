@@ -3,14 +3,23 @@ import time
 import json
 from datetime import datetime
 import os
+import sys
+
+# Debug: Visa working directory och filer
+print(f"🔍 Working directory: {os.getcwd()}")
+print(f"🔍 Filer i mappen: {os.listdir('.')}")
 
 # Importera Firebase notifier om vi är i GitHub Actions
 try:
     from firebase_notifier import notify_ramelia_change
     FIREBASE_ENABLED = True
-except ImportError:
+    print("✅ Firebase notifier importerad!")
+except ImportError as e:
     FIREBASE_ENABLED = False
-    print("ℹ️  Firebase notifier inte tillgänglig (kör lokalt?)")
+    print(f"ℹ️  Firebase notifier inte tillgänglig: {e}")
+except Exception as e:
+    FIREBASE_ENABLED = False
+    print(f"❌ Fel vid import av firebase_notifier: {e}")
 
 # URL för webbplatsen
 url = 'https://shiprep.no/shiprepwebui/CurrentPilotages.aspx'
