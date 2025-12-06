@@ -28,7 +28,7 @@ jobs:
         key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
         
     - name: Installera Python dependencies
-      run: pip install -r requirements.txt
+      run: pip install playwright==1.48.0 requests==2.31.0
         
     - name: Installera Playwright browsers (om inte cachade)
       if: steps.playwright-cache.outputs.cache-hit != 'true'
@@ -38,6 +38,8 @@ jobs:
       run: playwright install-deps chromium
       
     - name: Kör Ramelia scraper
+      env:
+        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
       run: python web_scraper.py
       
     - name: Spara tillstånd
