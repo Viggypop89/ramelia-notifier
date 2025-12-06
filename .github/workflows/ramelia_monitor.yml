@@ -28,7 +28,7 @@ jobs:
         key: playwright-${{ runner.os }}-v2-${{ hashFiles('requirements.txt') }}
         
     - name: Installera Python dependencies
-      run: pip install playwright==1.48.0 requests==2.31.0
+      run: pip install --force-reinstall playwright==1.48.0 requests==2.31.0 google-auth==2.23.0
         
     - name: Installera Playwright browsers (om inte cachade)
       if: steps.playwright-cache.outputs.cache-hit != 'true'
