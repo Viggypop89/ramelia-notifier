@@ -13,7 +13,7 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
     Args:
         page: Playwright page object
         dispatch_area: T.ex. "Kvitsøy losformidling"
-        station_name: T.ex. "Fedje" eller "-- All --"
+        station_name: T.ex. "-- All --"
     """
     try:
         print(f"\n--- Söker i {dispatch_area} / {station_name} ---")
@@ -35,8 +35,21 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         print(f"🏢 Väljer station: {station_name}")
         station_dropdown.select_option(label=station_name)
         
-        # Vänta på att tabellen laddas
-        time.sleep(3)
+        # Vänta lite innan vi klickar på knappen
+        time.sleep(1)
+        
+        # VIKTIGT: Tryck på "Show Pilotages" knappen för att ladda tabellen
+        try:
+            show_button = page.locator('input[type="submit"][value="Show Pilotages"]')
+            if show_button.is_visible():
+                print("✅ Klickar på 'Show Pilotages' knappen")
+                show_button.click()
+                # Vänta på att tabellen laddas efter knapptryck
+                time.sleep(3)
+            else:
+                print("⚠️  'Show Pilotages' knappen inte synlig")
+        except Exception as e:
+            print(f"⚠️  Kunde inte klicka på 'Show Pilotages': {e}")
         
         # Hitta alla tabeller på sidan
         tables = page.locator('table').all()
@@ -88,10 +101,11 @@ def check_all_areas():
     """Sök igenom alla losområden och stationer"""
     
     # Konfiguration: vilka områden och stationer ska vi söka i
+    # Endast "-- All --" för varje område (täcker alla stationer)
     search_config = [
         {
             'area': 'Kvitsøy losformidling',
-            'stations': ['Fedje', '-- All --']
+            'stations': ['-- All --']
         },
         {
             'area': 'Horten losformidling',
