@@ -2,6 +2,15 @@ from playwright.sync_api import sync_playwright
 import time
 import json
 from datetime import datetime
+import os
+
+# Importera Firebase notifier om vi är i GitHub Actions
+try:
+    from firebase_notifier import notify_ramelia_change
+    FIREBASE_ENABLED = True
+except ImportError:
+    FIREBASE_ENABLED = False
+    print("ℹ️  Firebase notifier inte tillgänglig (kör lokalt?)")
 
 # URL för webbplatsen
 url = 'https://shiprep.no/shiprepwebui/CurrentPilotages.aspx'
@@ -214,7 +223,13 @@ def check_for_changes():
                 print("\n📜 NY DATA:")
                 for item in current_results:
                     print(format_ramelia_info(item))
-                # TODO: Skicka Android-notifikation här
+                
+                # Skicka Firebase-notifikation
+                if FIREBASE_ENABLED and os.environ.get('FIREBASE_SERVICE_ACCOUNT'):
+                    print("\n📲 Skickar push-notifikation...")
+                    notify_ramelia_change(prev_data, current_results)
+                else:
+                    print("\nℹ️  Firebase inte konfigurerad - ingen notifikation skickad")
             else:
                 print("\n✓ Ingen förändring sedan senaste kontrollen")
         else:
