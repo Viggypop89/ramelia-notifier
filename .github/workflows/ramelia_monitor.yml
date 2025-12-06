@@ -49,14 +49,13 @@ jobs:
         FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
       run: python web_scraper.py
       
-    - name: Spara tillstånd
-      uses: actions/upload-artifact@v4
+    - name: Spara tillstånd för nästa körning
+      uses: actions/cache/save@v3
+      if: always()
       with:
-        name: ramelia-state
         path: ramelia_state.json
+        key: ramelia-state-${{ github.run_number }}
         
-    - name: Skicka notifikation om ändring
+    - name: Kontroll slutförd
       if: success()
-      run: |
-        # Här lägger vi till Firebase push notification senare
-        echo "Kontroll genomförd framgångsrikt"
+      run: echo "✅ Ramelia-övervakning slutförd. Firebase-notifikation skickas automatiskt vid ändringar."
