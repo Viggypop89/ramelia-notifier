@@ -29,7 +29,7 @@ jobs:
       run: python web_scraper.py
       
     - name: Spara tillstånd
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ramelia-state
         path: ramelia_state.json
