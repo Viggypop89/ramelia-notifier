@@ -1,54 +1,10 @@
 from playwright.sync_api import sync_playwright
 import time
 import json
-import os
-import requests
-from pathlib import Path
 from datetime import datetime
-
-# Konfiguration
-DATA_FILE = Path('ramelia_data.json')
-FIREBASE_URL = "din_firebase_url_kommer_här"  # Vi sätter detta senare
 
 # URL för webbplatsen
 url = 'https://shiprep.no/shiprepwebui/CurrentPilotages.aspx'
-
-def click_show_pilotages(page):
-    """Försök hitta och klicka på Show Pilotages-knappen"""
-    try:
-        # Försök hitta knappen med olika sökvägar
-        selectors = [
-            'input[type="submit"][value="Show Pilotages"]',
-            'button:has-text("Show Pilotages")',
-            'input[value="Show Pilotages"]',
-            '//input[@type="submit"][contains(@value, "Show")]',
-            '#btnShowPilotages'  # Lägg till fler selectors om behövs
-        ]
-        
-        for selector in selectors:
-            try:
-                button = page.locator(selector).first
-                if button.is_visible():
-                    print(f"✅ Hittade knappen med selector: {selector}")
-                    button.click()
-                    print("✅ Klickade på 'Show Pilotages'")
-                    # Vänta lite extra efter klicket
-                    page.wait_for_load_state('networkidle')
-                    time.sleep(3)
-                    return True
-            except Exception as e:
-                print(f"❌ Kunde inte klicka med {selector}: {str(e)}")
-                continue
-        
-        print("❌ Kunde inte hitta 'Show Pilotages'-knappen")
-        # Ta en skärmdump för felsökning
-        page.screenshot(path='error_show_button.png')
-        print("📸 Sparade skärmdump som 'error_show_button.png'")
-        return False
-        
-    except Exception as e:
-        print(f"❌ Fel vid sökning efter knapp: {str(e)}")
-        return False
 
 def search_ramelia_in_area(page, dispatch_area, station_name):
     """
@@ -81,18 +37,7 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         
         # Vänta på att tabellen laddas
         time.sleep(3)
-                # Klicka på Show Pilotages
-        if not click_show_pilotages(page):
-            print("❌ Kunde inte klicka på Show Pilotages, försöker fortsätta ändå...")
         
-        # Ta en skärmdump för felsökning
-        page.screenshot(path=f'screenshot_{dispatch_area}_{station_name}.png'.replace(' ', '_'))
-        print(f"📸 Sparade skärmdump som 'screenshot_{dispatch_area}_{station_name}.png'")
-        
-        # Spara sidans källa för felsökning
-        with open('page_source.html', 'w', encoding='utf-8') as f:
-            f.write(page.content())
-        print("💾 Sparade sidans källa till 'page_source.html'")
         # Hitta alla tabeller på sidan
         tables = page.locator('table').all()
         print(f"📋 Hittade {len(tables)} tabell(er)")
@@ -146,7 +91,7 @@ def check_all_areas():
     search_config = [
         {
             'area': 'Kvitsøy losformidling',
-            'stations': ['-- All --']  # Endast sök i "-- All --" för att undvika dubbletter
+            'stations': ['Fedje', '-- All --']
         },
         {
             'area': 'Horten losformidling',
@@ -217,8 +162,13 @@ def format_ramelia_info(data):
         return "Ingen data"
     
     result = []
-    result.append(f"🌍 Område: {data['dispatch_area']}")
-    result.append(f"🏢 Station: {data['station']}")
+    result.append(f"🌍 Område: {data.get('dispatch_area', 'N/A')}")
+    result.append(f"🏢 Station: {data.get('station', 'N/A')}")
+    result.append(f"🕐 Tidpunkt: {data.get('timestamp', 'N/A')}")
+    result.append(f"📋 Data: {data.get('row_data', 'N/A')}")
+    
+    return '\n'.join(result)
+
 def check_for_changes():
     """Huvudfunktion - kolla efter ändringar"""
     print(f"\n{'='*70}")
