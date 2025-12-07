@@ -200,12 +200,6 @@ def format_ramelia_info(data):
     result.append(f"📋 Data: {data.get('row_data', 'N/A')}")
     
     return '\n'.join(result)
-
-# TEMPORARY TEST - TA BORT EFTER TEST
-import os
-if os.path.exists('ramelia_state.json'):
-    os.remove('ramelia_state.json')
-    print("🧪 TEST: Raderade ramelia_state.json")
     
 def check_for_changes():
     """Huvudfunktion - kolla efter ändringar"""
