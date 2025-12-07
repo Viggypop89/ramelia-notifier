@@ -2,9 +2,8 @@ name: Ramelia Lotstid Monitor
 
 on:
   schedule:
-    # Körs 13 minuter över varje timme (undviker toppar vid heltimmar)
     - cron: '13 * * * *'
-  workflow_dispatch: # Tillåter manuell körning
+  workflow_dispatch:
 
 jobs:
   check-ramelia:
@@ -14,48 +13,30 @@ jobs:
     - name: Checkout kod
       uses: actions/checkout@v4
       
+    - name: Återställ tidigare tillstånd
+      uses: actions/cache/restore@v3
+      continue-on-error: true
+      with:
+        path: ramelia_state.json
+        key: ramelia-state-${{ github.run_number }}
+        restore-keys: ramelia-state-
+      
     - name: Sätt upp Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-        cache: 'pip'  # Cachar pip-paket!
         
-    - name: Cache Playwright browsers
-      uses: actions/cache@v3
-      id: playwright-cache
-      with:
-        path: ~/.cache/ms-playwright
-        key: playwright-${{ runner.os }}-v2-${{ hashFiles('requirements.txt') }}
-        
-    - name: Installera Python dependencies
-      run: pip install --force-reinstall playwright==1.48.0 requests==2.31.0 google-auth==2.23.0
-        
-    - name: Installera Playwright browsers (om inte cachade)
-      if: steps.playwright-cache.outputs.cache-hit != 'true'
-      run: playwright install chromium
+    - name: Installera dependencies
+      run: pip install playwright requests google-auth && playwright install chromium && playwright install-deps chromium
       
-    - name: Installera Playwright system dependencies
-      run: playwright install-deps chromium
-      
-    - name: Ladda ner tidigare tillstånd
-      uses: actions/download-artifact@v4
-      continue-on-error: true
-      with:
-        name: ramelia-state
-        path: .
-    
-    - name: Kör Ramelia scraper
+    - name: Kör scraper
       env:
         FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
       run: python web_scraper.py
       
-    - name: Spara tillstånd för nästa körning
+    - name: Spara tillstånd
       uses: actions/cache/save@v3
       if: always()
       with:
         path: ramelia_state.json
         key: ramelia-state-${{ github.run_number }}
-        
-    - name: Kontroll slutförd
-      if: success()
-      run: echo "✅ Ramelia-övervakning slutförd. Firebase-notifikation skickas automatiskt vid ändringar."
