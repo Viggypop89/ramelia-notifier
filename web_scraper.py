@@ -5,9 +5,6 @@ from datetime import datetime
 import os
 import sys
 
-# Debug: Visa working directory och filer
-print(f"🔍 Working directory: {os.getcwd()}")
-print(f"🔍 Filer i mappen: {os.listdir('.')}")
 
 # Importera Firebase notifier om vi är i GitHub Actions
 try:
@@ -258,29 +255,15 @@ def check_for_changes():
         print("\n❌ Ramelia inte funnen i något område")
         save_state(None)
 
-def test_notification():
-    """Skicka en testnotifikation"""
-    from firebase_notifier import send_notification
-    
-    print("\n🧪 SKICKAR TESTNOTIFIKATION...")
-    
-    title = "🚢 TEST: Ramelia Notifikation"
-    body = "Detta är en testnotifikation. Om du ser detta fungerar systemet!"
-    data = {
-        'type': 'test',
-        'timestamp': datetime.now().isoformat()
-    }
-    
-    send_notification(title, body, data)
-    print("✅ Testnotifikation skickad!")
+
 # Huvudprogram
 if __name__ == '__main__':
     print("🚢" + "="*68 + "🚢")
     print("   RAMELIA LOTSTID-ÖVERVAKNING MED PLAYWRIGHT")
     print("🚢" + "="*68 + "🚢")
-    
-    # TEMPORARY TEST - TA BORT EFTER TEST
-    test_notification()
-    
+       
     # Kör EN GÅNG (perfekt för GitHub Actions)
     check_for_changes()
+    
+    print("\n✅ Kontroll slutförd!")
+    print("Nästa kontroll sker automatiskt om 1 timme (via GitHub Actions)\n")
