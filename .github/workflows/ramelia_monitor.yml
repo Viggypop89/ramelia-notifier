@@ -37,8 +37,8 @@ jobs:
     - name: Installera Playwright system dependencies
       run: playwright install-deps chromium
       
-    - name: Återställ tidigare tillstånd från cache
-      uses: actions/cache/restore@v3
+    - name: Ladda ner tidigare tillstånd
+      uses: actions/download-artifact@v4
       continue-on-error: true
       with:
         name: ramelia-state
