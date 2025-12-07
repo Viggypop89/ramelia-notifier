@@ -1,7 +1,12 @@
 {
-  "last_data": [{
-    "dispatch_area": "Test",
-    "row_data": "GAMMAL DATA SOM SKILJER SIG"
-  }],
-  "last_check": "2025-12-07T10:00:00"
+  "last_data": [
+    {
+      "dispatch_area": "Lødingen losformidling",
+      "station": "-- All --",
+      "row_data": "09.12.2025 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fugloya Pilotboarding | Alta",
+      "timestamp": "2025-12-07T15:00:00.000000",
+      "cells": ["09.12.2025 08:00", "SGWI", "RAMELIA", "12770", "Chemical/Products Tanker", "Fugloya Pilotboarding", "Alta"]
+    }
+  ],
+  "last_check": "2025-12-07T15:00:00.000000"
 }
