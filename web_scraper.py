@@ -258,15 +258,29 @@ def check_for_changes():
         print("\n❌ Ramelia inte funnen i något område")
         save_state(None)
 
+def test_notification():
+    """Skicka en testnotifikation"""
+    from firebase_notifier import send_notification
+    
+    print("\n🧪 SKICKAR TESTNOTIFIKATION...")
+    
+    title = "🚢 TEST: Ramelia Notifikation"
+    body = "Detta är en testnotifikation. Om du ser detta fungerar systemet!"
+    data = {
+        'type': 'test',
+        'timestamp': datetime.now().isoformat()
+    }
+    
+    send_notification(title, body, data)
+    print("✅ Testnotifikation skickad!")
 # Huvudprogram
 if __name__ == '__main__':
     print("🚢" + "="*68 + "🚢")
     print("   RAMELIA LOTSTID-ÖVERVAKNING MED PLAYWRIGHT")
     print("🚢" + "="*68 + "🚢")
     
-    # Kör EN GÅNG (perfekt för GitHub Actions)
-    # GitHub Actions kommer köra scriptet igen automatiskt varje timme
-    check_for_changes()
+    # TEMPORARY TEST - TA BORT EFTER TEST
+    test_notification()
     
-    print("\n✅ Kontroll slutförd!")
-    print("Nästa kontroll sker automatiskt om 1 timme (via GitHub Actions)\n")
+    # Kör EN GÅNG (perfekt för GitHub Actions)
+    check_for_changes()
