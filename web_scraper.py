@@ -23,12 +23,15 @@ url = 'https://shiprep.no/shiprepwebui/CurrentPilotages.aspx'
 
 def search_ramelia_in_area(page, dispatch_area, station_name):
     """
-    Sök efter Ramelia i ett specifikt losområde och station
+    Sök efter ALLA förekomster av Ramelia i ett specifikt losområde och station
     
     Args:
         page: Playwright page object
         dispatch_area: T.ex. "Kvitsøy losformidling"
         station_name: T.ex. "-- All --"
+    
+    Returns:
+        list: Lista med alla Ramelia-förekomster (kan vara tom)
     """
     try:
         print(f"\n--- Söker i {dispatch_area} / {station_name} ---")
@@ -70,7 +73,7 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         tables = page.locator('table').all()
         print(f"📋 Hittade {len(tables)} tabell(er)")
         
-        ramelia_data = None
+        ramelia_findings = []  # Lista för att samla ALLA träffar
         
         # Gå igenom varje tabell
         for table_index, table in enumerate(tables):
@@ -93,7 +96,9 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
                         'station': station_name,
                         'row_data': row_text,
                         'timestamp': datetime.now().isoformat(),
-                        'cells': cell_texts
+                        'cells': cell_texts,
+                        'table_index': table_index + 1,
+                        'row_index': row_index
                     }
                     
                     # Skriv ut varje cell för bättre läsbarhet
@@ -101,16 +106,21 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
                     for i, cell_text in enumerate(cell_texts):
                         print(f"   Kolumn {i+1}: {cell_text}")
                     
-                    return ramelia_data
+                    ramelia_findings.append(ramelia_data)
+                    # FORTSÄTT LETA - ta INTE bort break här!
         
-        print("❌ Ramelia inte funnen i denna tabell")
-        return None
+        if ramelia_findings:
+            print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna i {dispatch_area}/{station_name}")
+        else:
+            print("❌ Ramelia inte funnen")
+            
+        return ramelia_findings
         
     except Exception as e:
         print(f"❌ Fel vid sökning: {e}")
         import traceback
         traceback.print_exc()
-        return None
+        return []
 
 def check_all_areas():
     """Sök igenom alla losområden och stationer"""
@@ -151,12 +161,10 @@ def check_all_areas():
             # Gå igenom varje område och station
             for config in search_config:
                 for station in config['stations']:
-                    result = search_ramelia_in_area(page, config['area'], station)
-                    if result:
-                        all_results.append(result)
-                        # Om vi hittat Ramelia, kanske vi inte behöver söka vidare?
-                        # Ta bort break nedan om du vill söka i alla områden ändå
-                        # break
+                    results = search_ramelia_in_area(page, config['area'], station)
+                    # results är nu en lista - lägg till alla träffar
+                    if results:
+                        all_results.extend(results)
             
         finally:
             browser.close()
@@ -266,4 +274,4 @@ if __name__ == '__main__':
     check_for_changes()
     
     print("\n✅ Kontroll slutförd!")
-    print("Nästa kontroll sker automatiskt om 1 timme (via GitHub Actions)\n")
+    print("Nästa kontroll sker automatiskt om 30 minuter (via GitHub Actions)\n")
