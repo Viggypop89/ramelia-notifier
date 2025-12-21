@@ -36,9 +36,14 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
     try:
         print(f"\n--- Söker i {dispatch_area} / {station_name} ---")
         
-        # Gå till sidan
-        page.goto(url, wait_until='networkidle', timeout=30000)
-        print("✓ Sida laddad")
+        # Gå till sidan med kortare timeout
+        try:
+            page.goto(url, wait_until='networkidle', timeout=20000)
+            print("✓ Sida laddad")
+        except Exception as e:
+            print(f"⚠️  Timeout vid laddning av sida, försöker igen...")
+            page.goto(url, wait_until='load', timeout=15000)
+            print("✓ Sida laddad (med load istället för networkidle)")
         
         # Välj Pilot Dispatch dropdown
         dispatch_dropdown = page.locator('#ctl00_MainContent_PilotageDispatchDepartmentDropDown')
@@ -126,20 +131,21 @@ def check_all_areas():
     """Sök igenom alla losområden och stationer"""
     
     # Konfiguration: vilka områden och stationer ska vi söka i
-    # Endast "-- All --" för varje område (täcker alla stationer)
+    # Endast Kvitsøy eftersom Ramelia verkar alltid vara där
     search_config = [
         {
             'area': 'Kvitsøy losformidling',
             'stations': ['-- All --']
-        },
-        {
-            'area': 'Horten losformidling',
-            'stations': ['-- All --']
-        },
-        {
-            'area': 'Lødingen losformidling',
-            'stations': ['-- All --']
         }
+        # Horten och Lødingen tillfälligt borttagna p.g.a. timeout-problem
+        # {
+        #     'area': 'Horten losformidling',
+        #     'stations': ['-- All --']
+        # },
+        # {
+        #     'area': 'Lødingen losformidling',
+        #     'stations': ['-- All --']
+        # }
     ]
     
     all_results = []
