@@ -2,7 +2,10 @@ name: Ramelia Lotstid Monitor
 
 on:
   schedule:
-    - cron: '13 * * * *'
+    # Kör var 30:e minut
+    - cron: '18,48 * * * *'
+  
+  # Tillåt manuell körning
   workflow_dispatch:
 
 jobs:
@@ -10,33 +13,32 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout kod
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
-    - name: Återställ tidigare tillstånd
-      uses: actions/cache/restore@v3
-      continue-on-error: true
-      with:
-        path: ramelia_state.json
-        key: ramelia-state-${{ github.run_number }}
-        restore-keys: ramelia-state-
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
       
-    - name: Sätt upp Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        
-    - name: Installera dependencies
-      run: pip install playwright requests google-auth && playwright install chromium && playwright install-deps chromium
+      - name: Install Playwright and dependencies
+        run: |
+          pip install playwright
+          pip install firebase-admin
+          playwright install chromium
+          playwright install-deps chromium
       
-    - name: Kör scraper
-      env:
-        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-      run: python web_scraper.py
+      - name: Run scraper
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          python web_scraper.py
       
-    - name: Spara tillstånd
-      uses: actions/cache/save@v3
-      if: always()
-      with:
-        path: ramelia_state.json
-        key: ramelia-state-${{ github.run_number }}
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ramelia_state.json || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Ramelia state [$(date +'%Y-%m-%d %H:%M:%S')]" && git push)
