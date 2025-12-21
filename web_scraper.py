@@ -112,14 +112,14 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
                         print(f"   Kolumn {i+1}: {cell_text}")
                     
                     ramelia_findings.append(ramelia_data)
-                    # FORTSÄTT LETA - ta INTE bort break här!
-        
-        if ramelia_findings:
-            print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna i {dispatch_area}/{station_name}")
-        else:
-            print("❌ Ramelia inte funnen")
             
-        return ramelia_findings
+            # Om vi hittat Ramelia i denna tabell, returnera direkt (fortsätt inte söka i fler tabeller)
+            if ramelia_findings:
+                print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna i {dispatch_area}/{station_name}")
+                return ramelia_findings
+        
+        print("❌ Ramelia inte funnen")
+        return []
         
     except Exception as e:
         print(f"❌ Fel vid sökning: {e}")
