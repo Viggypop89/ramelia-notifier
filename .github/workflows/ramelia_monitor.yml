@@ -2,7 +2,7 @@ name: Ramelia Lotstid Monitor
 
 on:
   schedule:
-    # Kör var 30:e minut
+    # Kör kl :18 och :48 varje timme (undviker :00 och :30 när många jobb körs)
     - cron: '18,48 * * * *'
   
   # Tillåt manuell körning
@@ -25,16 +25,22 @@ jobs:
       
       - name: Install Playwright and dependencies
         run: |
+          echo "📦 Installerar Playwright..."
           pip install playwright
+          echo "📦 Installerar Firebase Admin..."
           pip install firebase-admin
-          playwright install chromium
-          playwright install-deps chromium
+          echo "🌐 Installerar Chromium browser..."
+          playwright install chromium --with-deps
+          echo "✅ Installation klar!"
       
       - name: Run scraper
+        timeout-minutes: 10
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
+          echo "🚢 Startar Ramelia-övervakning..."
           python web_scraper.py
+          echo "✅ Scraper slutförd!"
       
       - name: Commit and push changes
         run: |
