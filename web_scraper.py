@@ -80,43 +80,79 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         
         ramelia_findings = []  # Lista för att samla ALLA träffar
         
+        # Max antal Ramelia-förekomster att leta efter
+        MAX_RAMELIA_FINDINGS = 4
+        
         # Gå igenom varje tabell
         for table_index, table in enumerate(tables):
-            # Hitta alla rader i tabellen
-            rows = table.locator('tr').all()
-            
-            for row_index, row in enumerate(rows):
-                # Hämta text från alla celler i raden
-                cells = row.locator('td, th').all()
-                cell_texts = [cell.inner_text().strip() for cell in cells if cell.inner_text().strip()]
-                row_text = ' | '.join(cell_texts)
+            try:
+                # Hitta alla rader i tabellen
+                rows = table.locator('tr').all()
+                print(f"🔍 Kollar {len(rows)} rader i tabell {table_index + 1}...")
                 
-                # Kolla om raden innehåller "Ramelia"
-                if 'RAMELIA' in row_text.upper() or 'Ramelia' in row_text:
-                    print(f"\n⭐ RAMELIA HITTAD I TABELL {table_index + 1}!")
-                    print(f"📋 Rad {row_index}: {row_text}")
+                for row_index, row in enumerate(rows):
+                    # Kolla om vi redan hittat max antal
+                    if len(ramelia_findings) >= MAX_RAMELIA_FINDINGS:
+                        print(f"\n⏹️  Max antal ({MAX_RAMELIA_FINDINGS}) Ramelia-förekomster hittade - stoppar sökning")
+                        return ramelia_findings
                     
-                    ramelia_data = {
-                        'dispatch_area': dispatch_area,
-                        'station': station_name,
-                        'row_data': row_text,
-                        'timestamp': datetime.now().isoformat(),
-                        'cells': cell_texts,
-                        'table_index': table_index + 1,
-                        'row_index': row_index
-                    }
+                    try:
+                        # Lägg till timeout för att undvika hängande operationer
+                        cells = row.locator('td, th').all()
+                        
+                        # Använd timeout för inner_text() operationer
+                        cell_texts = []
+                        for cell in cells:
+                            try:
+                                text = cell.inner_text(timeout=2000).strip()
+                                if text:
+                                    cell_texts.append(text)
+                            except Exception:
+                                # Skippa celler som tar för lång tid
+                                continue
+                        
+                        row_text = ' | '.join(cell_texts)
+                        
+                        # Kolla om raden innehåller "Ramelia"
+                        if 'RAMELIA' in row_text.upper() or 'Ramelia' in row_text:
+                            print(f"\n⭐ RAMELIA HITTAD I TABELL {table_index + 1}! (Träff #{len(ramelia_findings) + 1})")
+                            print(f"📋 Rad {row_index}: {row_text}")
+                            
+                            ramelia_data = {
+                                'dispatch_area': dispatch_area,
+                                'station': station_name,
+                                'row_data': row_text,
+                                'timestamp': datetime.now().isoformat(),
+                                'cells': cell_texts,
+                                'table_index': table_index + 1,
+                                'row_index': row_index
+                            }
+                            
+                            # Skriv ut varje cell för bättre läsbarhet
+                            print("\n📊 Detaljerad information:")
+                            for i, cell_text in enumerate(cell_texts):
+                                print(f"   Kolumn {i+1}: {cell_text}")
+                            
+                            ramelia_findings.append(ramelia_data)
                     
-                    # Skriv ut varje cell för bättre läsbarhet
-                    print("\n📊 Detaljerad information:")
-                    for i, cell_text in enumerate(cell_texts):
-                        print(f"   Kolumn {i+1}: {cell_text}")
-                    
-                    ramelia_findings.append(ramelia_data)
+                    except Exception as row_error:
+                        # Om vi får fel på en rad, fortsätt till nästa
+                        print(f"⚠️  Fel vid läsning av rad {row_index}: {row_error}")
+                        continue
+                
+                # Om vi hittat Ramelia i denna tabell, rapportera men fortsätt
+                # (för att hitta alla förekomster, upp till MAX)
+                if ramelia_findings:
+                    print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna hittills")
             
-            # Om vi hittat Ramelia i denna tabell, returnera direkt (fortsätt inte söka i fler tabeller)
-            if ramelia_findings:
-                print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna i {dispatch_area}/{station_name}")
-                return ramelia_findings
+            except Exception as table_error:
+                print(f"⚠️  Fel vid läsning av tabell {table_index + 1}: {table_error}")
+                continue
+        
+        # När vi gått igenom alla tabeller
+        if ramelia_findings:
+            print(f"\n✅ Sökning slutförd - totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna i {dispatch_area}/{station_name}")
+            return ramelia_findings
         
         print("❌ Ramelia inte funnen")
         return []
@@ -161,6 +197,9 @@ def check_all_areas():
         )
         page = context.new_page()
         
+        # Sätt default timeout för sidan
+        page.set_default_timeout(30000)  # 30 sekunder
+        
         print("✓ Webbläsare startad")
         
         try:
@@ -171,10 +210,16 @@ def check_all_areas():
                     # results är nu en lista - lägg till alla träffar
                     if results:
                         all_results.extend(results)
+                        # Om vi hittat Ramelia, behöver vi inte söka mer
+                        print("✅ Ramelia funnen - avslutar sökning")
+                        break
+                if all_results:
+                    break
             
         finally:
+            print("\n🔒 Stänger webbläsare...")
             browser.close()
-            print("\n🔒 Webbläsare stängd")
+            print("✓ Webbläsare stängd")
     
     return all_results
 
