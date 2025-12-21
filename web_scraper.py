@@ -86,11 +86,22 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         # Gå igenom varje tabell
         for table_index, table in enumerate(tables):
             try:
-                # Hitta alla rader i tabellen
-                rows = table.locator('tr').all()
-                print(f"🔍 Kollar {len(rows)} rader i tabell {table_index + 1}...")
+                # Använd en smart selector för att hitta ENDAST rader som innehåller "RAMELIA"
+                # Detta är mycket snabbare än att iterera genom alla 2619 rader
+                print(f"🔍 Söker efter Ramelia i tabell {table_index + 1}...")
                 
-                for row_index, row in enumerate(rows):
+                # Hitta alla rader i tabellen som innehåller text "RAMELIA" eller "Ramelia"
+                # Vi använder :has-text() selector för att filtrera direkt
+                ramelia_rows = table.locator('tr:has-text("RAMELIA"), tr:has-text("Ramelia")').all()
+                
+                print(f"✨ Hittade {len(ramelia_rows)} rad(er) med Ramelia")
+                
+                # Om inga rader hittades, fortsätt till nästa tabell
+                if not ramelia_rows:
+                    continue
+                
+                # Gå igenom endast de rader som innehåller Ramelia
+                for row_index, row in enumerate(ramelia_rows):
                     # Kolla om vi redan hittat max antal
                     if len(ramelia_findings) >= MAX_RAMELIA_FINDINGS:
                         print(f"\n⏹️  Max antal ({MAX_RAMELIA_FINDINGS}) Ramelia-förekomster hittade - stoppar sökning")
@@ -113,35 +124,32 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
                         
                         row_text = ' | '.join(cell_texts)
                         
-                        # Kolla om raden innehåller "Ramelia"
-                        if 'RAMELIA' in row_text.upper() or 'Ramelia' in row_text:
-                            print(f"\n⭐ RAMELIA HITTAD I TABELL {table_index + 1}! (Träff #{len(ramelia_findings) + 1})")
-                            print(f"📋 Rad {row_index}: {row_text}")
-                            
-                            ramelia_data = {
-                                'dispatch_area': dispatch_area,
-                                'station': station_name,
-                                'row_data': row_text,
-                                'timestamp': datetime.now().isoformat(),
-                                'cells': cell_texts,
-                                'table_index': table_index + 1,
-                                'row_index': row_index
-                            }
-                            
-                            # Skriv ut varje cell för bättre läsbarhet
-                            print("\n📊 Detaljerad information:")
-                            for i, cell_text in enumerate(cell_texts):
-                                print(f"   Kolumn {i+1}: {cell_text}")
-                            
-                            ramelia_findings.append(ramelia_data)
+                        print(f"\n⭐ RAMELIA HITTAD I TABELL {table_index + 1}! (Träff #{len(ramelia_findings) + 1})")
+                        print(f"📋 Rad: {row_text}")
+                        
+                        ramelia_data = {
+                            'dispatch_area': dispatch_area,
+                            'station': station_name,
+                            'row_data': row_text,
+                            'timestamp': datetime.now().isoformat(),
+                            'cells': cell_texts,
+                            'table_index': table_index + 1,
+                            'row_index': row_index
+                        }
+                        
+                        # Skriv ut varje cell för bättre läsbarhet
+                        print("\n📊 Detaljerad information:")
+                        for i, cell_text in enumerate(cell_texts):
+                            print(f"   Kolumn {i+1}: {cell_text}")
+                        
+                        ramelia_findings.append(ramelia_data)
                     
                     except Exception as row_error:
                         # Om vi får fel på en rad, fortsätt till nästa
-                        print(f"⚠️  Fel vid läsning av rad {row_index}: {row_error}")
+                        print(f"⚠️  Fel vid läsning av rad: {row_error}")
                         continue
                 
-                # Om vi hittat Ramelia i denna tabell, rapportera men fortsätt
-                # (för att hitta alla förekomster, upp till MAX)
+                # Om vi hittat Ramelia i denna tabell, rapportera
                 if ramelia_findings:
                     print(f"\n✅ Totalt {len(ramelia_findings)} Ramelia-förekomst(er) funna hittills")
             
