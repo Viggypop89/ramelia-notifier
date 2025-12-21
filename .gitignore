@@ -9,7 +9,6 @@ venv/
 ENV/
 
 # Lokala filer
-ramelia_state.json
 *.log
 
 # IDE
