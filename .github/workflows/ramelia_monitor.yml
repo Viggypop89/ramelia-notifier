@@ -39,7 +39,18 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
           echo "🚢 Startar Ramelia-övervakning..."
-          python web_scraper.py
+          echo "📁 Kontrollerar filer i mappen:"
+          ls -la *.py
+          echo ""
+          echo "🐍 Python-version:"
+          python --version
+          echo ""
+          echo "✅ Kollar syntax i web_scraper.py..."
+          python -m py_compile web_scraper.py
+          echo "✅ Syntax OK!"
+          echo ""
+          echo "▶️  Kör web_scraper.py..."
+          python -u web_scraper.py
           echo "✅ Scraper slutförd!"
       
       - name: Commit and push changes
@@ -48,3 +59,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add ramelia_state.json || true
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update Ramelia state [$(date +'%Y-%m-%d %H:%M:%S')]" && git push)
+         
