@@ -3,10 +3,10 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "23.12.2025 02:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
-      "timestamp": "2025-12-22T21:55:47.583053",
+      "row_data": "23.12.2025 03:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
+      "timestamp": "2025-12-22T22:40:37.830244",
       "cells": [
-        "23.12.2025 02:00",
+        "23.12.2025 03:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2025-12-22T21:55:47.637394"
+  "last_check": "2025-12-22T22:40:38.333959"
 }
