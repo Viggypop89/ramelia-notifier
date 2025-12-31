@@ -3,16 +3,17 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "31.12.2025 16:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2025-12-31T13:05:26.379557",
+      "row_data": "31.12.2025 16:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad | x",
+      "timestamp": "2025-12-31T13:47:18.681498",
       "cells": [
-        "31.12.2025 16:30",
+        "31.12.2025 16:45",
         "SGWI",
         "RAMELIA",
         "12770",
         "Chemical/Products Tanker",
         "Fonnesflaket Anchorage",
-        "Mongstad"
+        "Mongstad",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "01.01.2026 13:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2025-12-31T13:05:27.337776",
+      "timestamp": "2025-12-31T13:47:19.723457",
       "cells": [
         "01.01.2026 13:00",
         "SGWI",
@@ -38,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 00:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Breisundet Pilotboarding | Alesund",
-      "timestamp": "2025-12-31T13:05:28.276294",
+      "timestamp": "2025-12-31T13:47:20.754867",
       "cells": [
         "02.01.2026 00:30",
         "SGWI",
@@ -55,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding",
-      "timestamp": "2025-12-31T13:05:29.244497",
+      "timestamp": "2025-12-31T13:47:21.811588",
       "cells": [
         "02.01.2026 12:00",
         "SGWI",
@@ -69,5 +70,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2025-12-31T13:05:29.702792"
+  "last_check": "2025-12-31T13:47:22.273945"
 }
