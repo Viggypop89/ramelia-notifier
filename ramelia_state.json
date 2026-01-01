@@ -3,8 +3,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "01.01.2026 14:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2026-01-01T10:43:09.551300",
+      "row_data": "01.01.2026 14:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding | x",
+      "timestamp": "2026-01-01T10:57:15.446570",
       "cells": [
         "01.01.2026 14:00",
         "SGWI",
@@ -12,7 +12,8 @@
         "12770",
         "Chemical/Products Tanker",
         "Mongstad",
-        "Holmengra Pilotboarding"
+        "Holmengra Pilotboarding",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 00:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Breisundet Pilotboarding | Alesund",
-      "timestamp": "2026-01-01T10:43:10.550243",
+      "timestamp": "2026-01-01T10:57:16.412942",
       "cells": [
         "02.01.2026 00:30",
         "SGWI",
@@ -38,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding",
-      "timestamp": "2026-01-01T10:43:11.531591",
+      "timestamp": "2026-01-01T10:57:17.367575",
       "cells": [
         "02.01.2026 12:00",
         "SGWI",
@@ -55,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 21:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Grip inner Pilotboarding | Trondheim",
-      "timestamp": "2026-01-01T10:43:12.526817",
+      "timestamp": "2026-01-01T10:57:18.300871",
       "cells": [
         "02.01.2026 21:00",
         "SGWI",
@@ -69,5 +70,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-01-01T10:43:12.580275"
+  "last_check": "2026-01-01T10:57:18.904410"
 }
