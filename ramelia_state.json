@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.01.2026 20:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Breisundet Pilotboarding | Alesund | x",
-      "timestamp": "2026-01-02T19:28:20.652484",
+      "timestamp": "2026-01-02T19:56:37.752451",
       "cells": [
         "02.01.2026 20:30",
         "SGWI",
@@ -22,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "03.01.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding",
-      "timestamp": "2026-01-02T19:28:21.608817",
+      "timestamp": "2026-01-02T19:56:38.667134",
       "cells": [
         "03.01.2026 08:00",
         "SGWI",
@@ -39,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "03.01.2026 17:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Grip inner Pilotboarding | Trondheim",
-      "timestamp": "2026-01-02T19:28:22.532943",
+      "timestamp": "2026-01-02T19:56:39.566822",
       "cells": [
         "03.01.2026 17:00",
         "SGWI",
@@ -56,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "04.01.2026 14:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
-      "timestamp": "2026-01-02T19:28:23.475330",
+      "timestamp": "2026-01-02T19:56:40.468361",
       "cells": [
         "04.01.2026 14:00",
         "SGWI",
@@ -70,5 +70,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-01-02T19:28:23.527963"
+  "last_check": "2026-01-02T19:56:40.523750"
 }
