@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "26.01.2026 06:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
-      "timestamp": "2026-01-25T23:35:33.734712",
+      "timestamp": "2026-01-25T23:56:39.203550",
       "cells": [
         "26.01.2026 06:00",
         "SGWI",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-01-25T23:35:33.796289"
+  "last_check": "2026-01-25T23:56:39.267436"
 }
