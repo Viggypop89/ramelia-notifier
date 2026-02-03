@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "02.02.2026 23:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Flesa Pilotboarding | x",
-      "timestamp": "2026-02-02T23:47:25.000069",
+      "timestamp": "2026-02-03T00:57:29.058923",
       "cells": [
         "02.02.2026 23:30",
         "SGWI",
@@ -19,5 +19,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-02-02T23:47:25.506117"
+  "last_check": "2026-02-03T00:57:29.125745"
 }
