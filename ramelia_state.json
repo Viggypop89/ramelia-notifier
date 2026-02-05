@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "09.02.2026 04:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage",
-      "timestamp": "2026-02-05T10:28:06.578192",
+      "timestamp": "2026-02-05T11:24:49.027792",
       "cells": [
         "09.02.2026 04:30",
         "SGWI",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-02-05T10:28:06.645405"
+  "last_check": "2026-02-05T11:24:49.085545"
 }
