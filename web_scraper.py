@@ -172,23 +172,22 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         return []
 
 def check_all_areas():
+    def check_all_areas():
     """Sök igenom alla losområden och stationer"""
     
     # Konfiguration: vilka områden och stationer ska vi söka i
-
     search_config = [
         {
             'area': 'Kvitsøy losformidling',
             'stations': ['-- All --']
         },
-        
         {
             'area': 'Horten losformidling',
             'stations': ['-- All --']
-         },
-         {
-           'area': 'Lødingen losformidling',
-        'stations': ['-- All --']
+        },
+        {
+            'area': 'Lødingen losformidling',
+            'stations': ['-- All --']
         }
     ]
     
@@ -218,11 +217,7 @@ def check_all_areas():
                     # results är nu en lista - lägg till alla träffar
                     if results:
                         all_results.extend(results)
-                        # Om vi hittat Ramelia, behöver vi inte söka mer
-                        print("✅ Ramelia funnen - avslutar sökning")
-                        break
-                if all_results:
-                    break
+                        print(f"✅ Hittade {len(results)} träff(ar) i {config['area']}")
             
         finally:
             print("\n🔒 Stänger webbläsare...")
