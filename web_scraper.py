@@ -172,7 +172,6 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         return []
 
 def check_all_areas():
-    def check_all_areas():
     """Sök igenom alla losområden och stationer"""
     
     # Konfiguration: vilka områden och stationer ska vi söka i
