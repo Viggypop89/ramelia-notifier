@@ -180,7 +180,7 @@ def check_all_areas():
         {
             'area': 'Kvitsøy losformidling',
             'stations': ['-- All --']
-        }
+        },
         
         {
             'area': 'Horten losformidling',
