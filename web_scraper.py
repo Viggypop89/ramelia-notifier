@@ -81,7 +81,7 @@ def search_ramelia_in_area(page, dispatch_area, station_name):
         ramelia_findings = []  # Lista för att samla ALLA träffar
         
         # Max antal Ramelia-förekomster att leta efter
-        MAX_RAMELIA_FINDINGS = 4
+        MAX_RAMELIA_FINDINGS = 8
         
         # Gå igenom varje tabell
         for table_index, table in enumerate(tables):
@@ -175,21 +175,21 @@ def check_all_areas():
     """Sök igenom alla losområden och stationer"""
     
     # Konfiguration: vilka områden och stationer ska vi söka i
-    # Endast Kvitsøy eftersom Ramelia verkar alltid vara där
+
     search_config = [
         {
             'area': 'Kvitsøy losformidling',
             'stations': ['-- All --']
         }
-        # Horten och Lødingen tillfälligt borttagna p.g.a. timeout-problem
-        # {
-        #     'area': 'Horten losformidling',
-        #     'stations': ['-- All --']
-        # },
-        # {
-        #     'area': 'Lødingen losformidling',
-        #     'stations': ['-- All --']
-        # }
+        
+        {
+            'area': 'Horten losformidling',
+            'stations': ['-- All --']
+         },
+         {
+           'area': 'Lødingen losformidling',
+        'stations': ['-- All --']
+        }
     ]
     
     all_results = []
