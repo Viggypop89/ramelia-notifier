@@ -4,7 +4,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "06.03.2026 10:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fugloya Pilotboarding | Alta",
-      "timestamp": "2026-03-05T00:57:13.476831",
+      "timestamp": "2026-03-05T03:38:40.484293",
       "cells": [
         "06.03.2026 10:00",
         "SGWI",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-03-05T00:57:13.544209"
+  "last_check": "2026-03-05T03:38:40.550357"
 }
