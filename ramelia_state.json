@@ -3,8 +3,8 @@
     {
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
-      "row_data": "06.03.2026 09:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fugloya Pilotboarding | Alta",
-      "timestamp": "2026-03-06T05:03:50.691485",
+      "row_data": "06.03.2026 09:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fugloya Pilotboarding | Alta | x",
+      "timestamp": "2026-03-06T06:02:19.583267",
       "cells": [
         "06.03.2026 09:00",
         "SGWI",
@@ -12,11 +12,12 @@
         "12770",
         "Chemical/Products Tanker",
         "Fugloya Pilotboarding",
-        "Alta"
+        "Alta",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
     }
   ],
-  "last_check": "2026-03-06T05:03:50.756745"
+  "last_check": "2026-03-06T06:02:20.025663"
 }
