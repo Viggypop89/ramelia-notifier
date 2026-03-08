@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "11.03.2026 04:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-03-08T04:55:14.461256",
+      "timestamp": "2026-03-08T06:00:05.367154",
       "cells": [
         "11.03.2026 04:00",
         "SGWI",
@@ -21,7 +21,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "07.03.2026 23:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Harstad | x",
-      "timestamp": "2026-03-08T04:55:33.395698",
+      "timestamp": "2026-03-08T06:00:23.731448",
       "cells": [
         "07.03.2026 23:00",
         "SGWI",
@@ -39,7 +39,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "08.03.2026 14:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Lodingen Pilotboarding",
-      "timestamp": "2026-03-08T04:55:33.718380",
+      "timestamp": "2026-03-08T06:00:23.985224",
       "cells": [
         "08.03.2026 14:00",
         "SGWI",
@@ -56,7 +56,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "08.03.2026 23:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Landegode Pilotboarding | Bodo",
-      "timestamp": "2026-03-08T04:55:33.989143",
+      "timestamp": "2026-03-08T06:00:24.245059",
       "cells": [
         "08.03.2026 23:00",
         "SGWI",
@@ -73,7 +73,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "09.03.2026 07:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Bodo | Landegode Pilotboarding",
-      "timestamp": "2026-03-08T04:55:34.236769",
+      "timestamp": "2026-03-08T06:00:24.491526",
       "cells": [
         "09.03.2026 07:00",
         "SGWI",
@@ -87,5 +87,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-03-08T04:55:34.305213"
+  "last_check": "2026-03-08T06:00:24.538037"
 }
