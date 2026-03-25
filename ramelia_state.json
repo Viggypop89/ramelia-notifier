@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "27.03.2026 23:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Haugsoytangen Anchorage | Mongstad",
-      "timestamp": "2026-03-25T16:57:42.259893",
+      "timestamp": "2026-03-25T17:46:08.581100",
       "cells": [
         "27.03.2026 23:30",
         "SGWI",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-03-25T16:57:59.431354"
+  "last_check": "2026-03-25T17:46:25.193766"
 }
