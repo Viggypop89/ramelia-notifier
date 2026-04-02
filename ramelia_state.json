@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "06.04.2026 11:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-04-02T00:59:57.311667",
+      "timestamp": "2026-04-02T04:02:13.062156",
       "cells": [
         "06.04.2026 11:30",
         "SGWI",
@@ -21,7 +21,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "01.04.2026 15:35 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Lodingen Pilotboarding | Harstad | x",
-      "timestamp": "2026-04-02T01:00:26.811312",
+      "timestamp": "2026-04-02T04:02:30.765014",
       "cells": [
         "01.04.2026 15:35",
         "SGWI",
@@ -38,8 +38,8 @@
     {
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
-      "row_data": "02.04.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso",
-      "timestamp": "2026-04-02T01:00:27.090408",
+      "row_data": "02.04.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso | x",
+      "timestamp": "2026-04-02T04:02:31.047920",
       "cells": [
         "02.04.2026 08:00",
         "SGWI",
@@ -47,7 +47,8 @@
         "12770",
         "Chemical/Products Tanker",
         "Harstad",
-        "Tromso"
+        "Tromso",
+        "x"
       ],
       "table_index": 1,
       "row_index": 1
@@ -56,7 +57,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "02.04.2026 19:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
-      "timestamp": "2026-04-02T01:00:27.327897",
+      "timestamp": "2026-04-02T04:02:31.295347",
       "cells": [
         "02.04.2026 19:30",
         "SGWI",
@@ -73,7 +74,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "03.04.2026 15:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alta | Fugloya Pilotboarding",
-      "timestamp": "2026-04-02T01:00:27.636597",
+      "timestamp": "2026-04-02T04:02:31.558364",
       "cells": [
         "03.04.2026 15:00",
         "SGWI",
@@ -87,5 +88,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-04-02T01:00:27.683651"
+  "last_check": "2026-04-02T04:02:32.037019"
 }
