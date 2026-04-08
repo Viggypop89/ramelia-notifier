@@ -3,10 +3,10 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "09.04.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fonnesflaket Anchorage",
-      "timestamp": "2026-04-08T21:04:18.833162",
+      "row_data": "09.04.2026 10:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fonnesflaket Anchorage",
+      "timestamp": "2026-04-08T22:02:31.305645",
       "cells": [
-        "09.04.2026 08:00",
+        "09.04.2026 10:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -18,5 +18,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-04-08T21:04:40.628345"
+  "last_check": "2026-04-08T22:02:48.262648"
 }
