@@ -3,16 +3,17 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "24.04.2026 13:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
-      "timestamp": "2026-04-24T06:31:45.856933",
+      "row_data": "24.04.2026 12:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding | x",
+      "timestamp": "2026-04-24T08:53:49.981519",
       "cells": [
-        "24.04.2026 13:00",
+        "24.04.2026 12:30",
         "SGWI",
         "RAMELIA",
         "12770",
         "Chemical/Products Tanker",
         "Mongstad",
-        "Fedjeosen Pilotboarding"
+        "Fedjeosen Pilotboarding",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -20,10 +21,10 @@
     {
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
-      "row_data": "25.04.2026 18:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Oslo",
-      "timestamp": "2026-04-24T06:31:55.341135",
+      "row_data": "25.04.2026 22:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Oslo",
+      "timestamp": "2026-04-24T08:53:59.251504",
       "cells": [
-        "25.04.2026 18:00",
+        "25.04.2026 22:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -37,10 +38,10 @@
     {
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
-      "row_data": "26.04.2026 21:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Oslo | Farder Pilotboarding",
-      "timestamp": "2026-04-24T06:31:55.628184",
+      "row_data": "27.04.2026 01:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Oslo | Farder Pilotboarding",
+      "timestamp": "2026-04-24T08:53:59.486607",
       "cells": [
-        "26.04.2026 21:00",
+        "27.04.2026 01:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -52,5 +53,5 @@
       "row_index": 1
     }
   ],
-  "last_check": "2026-04-24T06:32:04.780119"
+  "last_check": "2026-04-24T08:54:09.578478"
 }
