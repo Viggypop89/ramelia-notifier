@@ -3,8 +3,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "01.05.2026 09:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2026-05-01T01:28:32.311969",
+      "row_data": "01.05.2026 09:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding | x",
+      "timestamp": "2026-05-01T05:29:13.775127",
       "cells": [
         "01.05.2026 09:00",
         "SGWI",
@@ -12,7 +12,8 @@
         "12770",
         "Chemical/Products Tanker",
         "Mongstad",
-        "Holmengra Pilotboarding"
+        "Holmengra Pilotboarding",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "02.05.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Svartoksen Pilotboarding | Bodo",
-      "timestamp": "2026-05-01T01:28:49.222871",
+      "timestamp": "2026-05-01T05:29:30.818266",
       "cells": [
         "02.05.2026 20:00",
         "SGWI",
@@ -38,7 +39,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "03.05.2026 02:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Bodo | Landegode Pilotboarding",
-      "timestamp": "2026-05-01T01:28:49.476979",
+      "timestamp": "2026-05-01T05:29:31.120233",
       "cells": [
         "03.05.2026 02:30",
         "SGWI",
@@ -55,7 +56,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "03.05.2026 10:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Lodingen Pilotboarding | Harstad",
-      "timestamp": "2026-05-01T01:28:49.741947",
+      "timestamp": "2026-05-01T05:29:31.408814",
       "cells": [
         "03.05.2026 10:00",
         "SGWI",
@@ -72,7 +73,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "04.05.2026 01:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso",
-      "timestamp": "2026-05-01T01:28:50.015460",
+      "timestamp": "2026-05-01T05:29:31.696673",
       "cells": [
         "04.05.2026 01:00",
         "SGWI",
@@ -89,7 +90,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "04.05.2026 17:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
-      "timestamp": "2026-05-01T01:28:50.282676",
+      "timestamp": "2026-05-01T05:29:31.975289",
       "cells": [
         "04.05.2026 17:00",
         "SGWI",
@@ -103,5 +104,5 @@
       "row_index": 4
     }
   ],
-  "last_check": "2026-05-01T01:28:50.581481"
+  "last_check": "2026-05-01T05:29:32.263826"
 }
