@@ -4,7 +4,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "02.05.2026 23:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Svartoksen Pilotboarding | Bodo",
-      "timestamp": "2026-05-02T09:36:14.277307",
+      "timestamp": "2026-05-02T10:37:19.248848",
       "cells": [
         "02.05.2026 23:30",
         "SGWI",
@@ -21,7 +21,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "03.05.2026 07:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Bodo | Landegode Pilotboarding",
-      "timestamp": "2026-05-02T09:36:14.498729",
+      "timestamp": "2026-05-02T10:37:19.492402",
       "cells": [
         "03.05.2026 07:30",
         "SGWI",
@@ -38,7 +38,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "03.05.2026 15:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Lodingen Pilotboarding | Harstad",
-      "timestamp": "2026-05-02T09:36:14.711363",
+      "timestamp": "2026-05-02T10:37:19.721343",
       "cells": [
         "03.05.2026 15:00",
         "SGWI",
@@ -55,7 +55,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "04.05.2026 06:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso",
-      "timestamp": "2026-05-02T09:36:14.927340",
+      "timestamp": "2026-05-02T10:37:19.965852",
       "cells": [
         "04.05.2026 06:00",
         "SGWI",
@@ -72,7 +72,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "04.05.2026 22:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
-      "timestamp": "2026-05-02T09:36:15.137799",
+      "timestamp": "2026-05-02T10:37:20.197071",
       "cells": [
         "04.05.2026 22:00",
         "SGWI",
@@ -86,5 +86,5 @@
       "row_index": 4
     }
   ],
-  "last_check": "2026-05-02T09:36:15.189478"
+  "last_check": "2026-05-02T10:37:20.251264"
 }
