@@ -3,28 +3,10 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "25.05.2026 16:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fedjeosen Pilotboarding | Fonnesflaket Anchorage | x",
-      "timestamp": "2026-05-25T16:36:33.909364",
+      "row_data": "26.05.2026 02:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
+      "timestamp": "2026-05-25T18:18:27.476978",
       "cells": [
-        "25.05.2026 16:45",
-        "SGWI",
-        "RAMELIA",
-        "12770",
-        "Chemical/Products Tanker",
-        "Fedjeosen Pilotboarding",
-        "Fonnesflaket Anchorage",
-        "x"
-      ],
-      "table_index": 1,
-      "row_index": 0
-    },
-    {
-      "dispatch_area": "Kvitsøy losformidling",
-      "station": "-- All --",
-      "row_data": "26.05.2026 02:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2026-05-25T16:36:34.777020",
-      "cells": [
-        "26.05.2026 02:00",
+        "26.05.2026 02:30",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -33,13 +15,13 @@
         "Mongstad"
       ],
       "table_index": 1,
-      "row_index": 1
+      "row_index": 0
     },
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "27.05.2026 07:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
-      "timestamp": "2026-05-25T16:36:35.628771",
+      "timestamp": "2026-05-25T18:18:28.240544",
       "cells": [
         "27.05.2026 07:00",
         "SGWI",
@@ -50,13 +32,13 @@
         "Fedjeosen Pilotboarding"
       ],
       "table_index": 1,
-      "row_index": 2
+      "row_index": 1
     },
     {
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
       "row_data": "28.05.2026 07:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Oslo",
-      "timestamp": "2026-05-25T16:36:44.192024",
+      "timestamp": "2026-05-25T18:18:36.831856",
       "cells": [
         "28.05.2026 07:00",
         "SGWI",
@@ -70,5 +52,5 @@
       "row_index": 0
     }
   ],
-  "last_check": "2026-05-25T16:36:52.910526"
+  "last_check": "2026-05-25T18:18:46.012306"
 }
