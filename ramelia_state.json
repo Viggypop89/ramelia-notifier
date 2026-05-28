@@ -3,16 +3,17 @@
     {
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
-      "row_data": "28.05.2026 22:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Oslo",
-      "timestamp": "2026-05-28T16:36:05.325322",
+      "row_data": "28.05.2026 22:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Oslo | x",
+      "timestamp": "2026-05-28T19:30:21.106192",
       "cells": [
-        "28.05.2026 22:00",
+        "28.05.2026 22:30",
         "SGWI",
         "RAMELIA",
         "12770",
         "Chemical/Products Tanker",
         "Farder Pilotboarding",
-        "Oslo"
+        "Oslo",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
       "row_data": "29.05.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Oslo | Farder Pilotboarding",
-      "timestamp": "2026-05-28T16:36:05.564545",
+      "timestamp": "2026-05-28T19:30:21.254854",
       "cells": [
         "29.05.2026 20:00",
         "SGWI",
@@ -35,5 +36,5 @@
       "row_index": 1
     }
   ],
-  "last_check": "2026-05-28T16:36:17.152393"
+  "last_check": "2026-05-28T19:30:56.386601"
 }
