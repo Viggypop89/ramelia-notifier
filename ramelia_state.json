@@ -1,23 +1,39 @@
 {
   "last_data": [
     {
-      "dispatch_area": "Kvitsøy losformidling",
+      "dispatch_area": "Horten losformidling",
       "station": "-- All --",
-      "row_data": "01.06.2026 19:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding | x",
-      "timestamp": "2026-06-01T16:48:27.953170",
+      "row_data": "03.06.2026 02:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Slagentangen",
+      "timestamp": "2026-06-01T20:49:00.957064",
       "cells": [
-        "01.06.2026 19:00",
+        "03.06.2026 02:30",
         "SGWI",
         "RAMELIA",
         "12770",
         "Chemical/Products Tanker",
-        "Mongstad",
-        "Fedjeosen Pilotboarding",
-        "x"
+        "Farder Pilotboarding",
+        "Slagentangen"
       ],
       "table_index": 1,
       "row_index": 0
+    },
+    {
+      "dispatch_area": "Horten losformidling",
+      "station": "-- All --",
+      "row_data": "04.06.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Slagentangen | Farder Pilotboarding",
+      "timestamp": "2026-06-01T20:49:01.170585",
+      "cells": [
+        "04.06.2026 00:01",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Slagentangen",
+        "Farder Pilotboarding"
+      ],
+      "table_index": 1,
+      "row_index": 1
     }
   ],
-  "last_check": "2026-06-01T16:48:45.002191"
+  "last_check": "2026-06-01T20:49:10.532324"
 }
