@@ -4,7 +4,7 @@
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
       "row_data": "03.06.2026 04:15 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Farder Pilotboarding | Slagentangen | x",
-      "timestamp": "2026-06-03T05:21:17.601551",
+      "timestamp": "2026-06-03T10:26:16.811975",
       "cells": [
         "03.06.2026 04:15",
         "SGWI",
@@ -22,7 +22,7 @@
       "dispatch_area": "Horten losformidling",
       "station": "-- All --",
       "row_data": "04.06.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Slagentangen | Farder Pilotboarding",
-      "timestamp": "2026-06-03T05:21:17.818024",
+      "timestamp": "2026-06-03T10:26:17.028314",
       "cells": [
         "04.06.2026 00:01",
         "SGWI",
@@ -36,5 +36,5 @@
       "row_index": 1
     }
   ],
-  "last_check": "2026-06-03T05:21:26.302525"
+  "last_check": "2026-06-03T10:26:25.429419"
 }
