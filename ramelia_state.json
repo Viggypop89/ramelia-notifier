@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "06.06.2026 19:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad | x",
-      "timestamp": "2026-06-06T14:54:47.894375",
+      "timestamp": "2026-06-06T16:36:25.267551",
       "cells": [
         "06.06.2026 19:30",
         "SGWI",
@@ -22,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "07.06.2026 16:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2026-06-06T14:54:48.595924",
+      "timestamp": "2026-06-06T16:36:25.904372",
       "cells": [
         "07.06.2026 16:00",
         "SGWI",
@@ -39,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "08.06.2026 03:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Breisundet Pilotboarding | Alesund",
-      "timestamp": "2026-06-06T14:54:49.251186",
+      "timestamp": "2026-06-06T16:36:26.546770",
       "cells": [
         "08.06.2026 03:00",
         "SGWI",
@@ -56,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "08.06.2026 14:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding",
-      "timestamp": "2026-06-06T14:54:49.933381",
+      "timestamp": "2026-06-06T16:36:27.229587",
       "cells": [
         "08.06.2026 14:30",
         "SGWI",
@@ -73,7 +73,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "09.06.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Grip inner Pilotboarding | Trondheim",
-      "timestamp": "2026-06-06T14:54:50.609385",
+      "timestamp": "2026-06-06T16:36:27.900843",
       "cells": [
         "09.06.2026 08:00",
         "SGWI",
@@ -87,5 +87,5 @@
       "row_index": 4
     }
   ],
-  "last_check": "2026-06-06T14:55:07.476082"
+  "last_check": "2026-06-06T16:36:45.387105"
 }
