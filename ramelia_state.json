@@ -3,28 +3,10 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "09.06.2026 12:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Grip inner Pilotboarding | Trondheim | x",
-      "timestamp": "2026-06-09T18:24:38.901367",
+      "row_data": "10.06.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
+      "timestamp": "2026-06-09T20:51:44.636494",
       "cells": [
-        "09.06.2026 12:45",
-        "SGWI",
-        "RAMELIA",
-        "12770",
-        "Chemical/Products Tanker",
-        "Grip inner Pilotboarding",
-        "Trondheim",
-        "x"
-      ],
-      "table_index": 1,
-      "row_index": 0
-    },
-    {
-      "dispatch_area": "Kvitsøy losformidling",
-      "station": "-- All --",
-      "row_data": "10.06.2026 11:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
-      "timestamp": "2026-06-09T18:24:39.617540",
-      "cells": [
-        "10.06.2026 11:00",
+        "10.06.2026 12:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -33,15 +15,15 @@
         "Grip inner Pilotboarding"
       ],
       "table_index": 1,
-      "row_index": 1
+      "row_index": 0
     },
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "11.06.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-06-09T18:24:40.332027",
+      "row_data": "11.06.2026 17:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
+      "timestamp": "2026-06-09T20:51:45.343120",
       "cells": [
-        "11.06.2026 12:00",
+        "11.06.2026 17:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -50,8 +32,8 @@
         "Mongstad"
       ],
       "table_index": 1,
-      "row_index": 2
+      "row_index": 1
     }
   ],
-  "last_check": "2026-06-09T18:24:57.987719"
+  "last_check": "2026-06-09T20:52:03.177766"
 }
