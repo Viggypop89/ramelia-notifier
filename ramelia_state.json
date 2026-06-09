@@ -3,8 +3,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "09.06.2026 05:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding",
-      "timestamp": "2026-06-08T23:40:14.157345",
+      "row_data": "09.06.2026 05:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alesund | Breisundet Pilotboarding | x",
+      "timestamp": "2026-06-09T01:32:55.625253",
       "cells": [
         "09.06.2026 05:00",
         "SGWI",
@@ -12,7 +12,8 @@
         "12770",
         "Chemical/Products Tanker",
         "Alesund",
-        "Breisundet Pilotboarding"
+        "Breisundet Pilotboarding",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "09.06.2026 13:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Grip inner Pilotboarding | Trondheim",
-      "timestamp": "2026-06-08T23:40:14.833516",
+      "timestamp": "2026-06-09T01:32:56.378068",
       "cells": [
         "09.06.2026 13:00",
         "SGWI",
@@ -38,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "10.06.2026 11:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
-      "timestamp": "2026-06-08T23:40:15.506980",
+      "timestamp": "2026-06-09T01:32:57.089686",
       "cells": [
         "10.06.2026 11:00",
         "SGWI",
@@ -55,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "11.06.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-06-08T23:40:16.241031",
+      "timestamp": "2026-06-09T01:32:57.852393",
       "cells": [
         "11.06.2026 12:00",
         "SGWI",
@@ -69,5 +70,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-06-08T23:40:33.438026"
+  "last_check": "2026-06-09T01:33:15.107598"
 }
