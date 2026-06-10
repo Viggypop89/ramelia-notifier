@@ -3,10 +3,10 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "10.06.2026 15:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
-      "timestamp": "2026-06-10T10:35:57.475510",
+      "row_data": "10.06.2026 14:50 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Trondheim | Grip inner Pilotboarding",
+      "timestamp": "2026-06-10T14:12:34.367309",
       "cells": [
-        "10.06.2026 15:00",
+        "10.06.2026 14:50",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -20,8 +20,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "11.06.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-06-10T10:35:58.144648",
+      "row_data": "11.06.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage",
+      "timestamp": "2026-06-10T14:12:35.061647",
       "cells": [
         "11.06.2026 20:00",
         "SGWI",
@@ -29,11 +29,45 @@
         "12770",
         "Chemical/Products Tanker",
         "Holmengra Pilotboarding",
-        "Mongstad"
+        "Fonnesflaket Anchorage"
       ],
       "table_index": 1,
       "row_index": 1
+    },
+    {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
+      "row_data": "15.06.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
+      "timestamp": "2026-06-10T14:12:35.760878",
+      "cells": [
+        "15.06.2026 00:01",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Fonnesflaket Anchorage",
+        "Mongstad"
+      ],
+      "table_index": 1,
+      "row_index": 2
+    },
+    {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
+      "row_data": "16.06.2026 01:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Fedjeosen Pilotboarding",
+      "timestamp": "2026-06-10T14:12:36.502843",
+      "cells": [
+        "16.06.2026 01:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Mongstad",
+        "Fedjeosen Pilotboarding"
+      ],
+      "table_index": 1,
+      "row_index": 3
     }
   ],
-  "last_check": "2026-06-10T10:36:17.454322"
+  "last_check": "2026-06-10T14:12:54.484152"
 }
