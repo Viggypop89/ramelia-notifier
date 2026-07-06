@@ -4,7 +4,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "07.07.2026 03:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Lodingen Pilotboarding | Harstad | x",
-      "timestamp": "2026-07-06T22:41:55.267698",
+      "timestamp": "2026-07-06T23:49:58.532553",
       "cells": [
         "07.07.2026 03:30",
         "SGWI",
@@ -22,7 +22,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "07.07.2026 18:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso",
-      "timestamp": "2026-07-06T22:41:55.460590",
+      "timestamp": "2026-07-06T23:49:58.688766",
       "cells": [
         "07.07.2026 18:00",
         "SGWI",
@@ -39,7 +39,7 @@
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "08.07.2026 10:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
-      "timestamp": "2026-07-06T22:41:55.629231",
+      "timestamp": "2026-07-06T23:49:58.830174",
       "cells": [
         "08.07.2026 10:00",
         "SGWI",
@@ -53,5 +53,5 @@
       "row_index": 2
     }
   ],
-  "last_check": "2026-07-06T22:41:56.055814"
+  "last_check": "2026-07-06T23:49:58.867114"
 }
