@@ -1,10 +1,27 @@
 {
   "last_data": [
     {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
+      "row_data": "12.07.2026 08:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
+      "timestamp": "2026-07-07T18:51:47.369439",
+      "cells": [
+        "12.07.2026 08:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Holmengra Pilotboarding",
+        "Mongstad"
+      ],
+      "table_index": 1,
+      "row_index": 0
+    },
+    {
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
       "row_data": "07.07.2026 19:15 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Harstad | Tromso | x",
-      "timestamp": "2026-07-07T16:42:58.417962",
+      "timestamp": "2026-07-07T18:52:04.030136",
       "cells": [
         "07.07.2026 19:15",
         "SGWI",
@@ -21,10 +38,10 @@
     {
       "dispatch_area": "Lødingen losformidling",
       "station": "-- All --",
-      "row_data": "08.07.2026 11:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
-      "timestamp": "2026-07-07T16:42:58.584679",
+      "row_data": "08.07.2026 14:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Tromso | Alta",
+      "timestamp": "2026-07-07T18:52:04.200387",
       "cells": [
-        "08.07.2026 11:00",
+        "08.07.2026 14:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -34,7 +51,24 @@
       ],
       "table_index": 1,
       "row_index": 1
+    },
+    {
+      "dispatch_area": "Lødingen losformidling",
+      "station": "-- All --",
+      "row_data": "09.07.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Alta | Fugloya Pilotboarding",
+      "timestamp": "2026-07-07T18:52:04.369832",
+      "cells": [
+        "09.07.2026 12:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Alta",
+        "Fugloya Pilotboarding"
+      ],
+      "table_index": 1,
+      "row_index": 2
     }
   ],
-  "last_check": "2026-07-07T16:42:59.229850"
+  "last_check": "2026-07-07T18:52:04.723832"
 }
