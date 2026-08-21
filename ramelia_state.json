@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "21.08.2026 16:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage",
-      "timestamp": "2026-08-21T04:24:47.160351",
+      "timestamp": "2026-08-21T05:18:26.665374",
       "cells": [
         "21.08.2026 16:30",
         "SGWI",
@@ -21,7 +21,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "23.08.2026 07:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2026-08-21T04:24:47.422962",
+      "timestamp": "2026-08-21T05:18:26.960813",
       "cells": [
         "23.08.2026 07:00",
         "SGWI",
@@ -38,7 +38,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "24.08.2026 07:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2026-08-21T04:24:47.705050",
+      "timestamp": "2026-08-21T05:18:27.243053",
       "cells": [
         "24.08.2026 07:00",
         "SGWI",
@@ -52,5 +52,5 @@
       "row_index": 2
     }
   ],
-  "last_check": "2026-08-21T04:25:04.161185"
+  "last_check": "2026-08-21T05:18:43.541235"
 }
