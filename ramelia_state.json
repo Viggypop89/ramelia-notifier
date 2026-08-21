@@ -3,8 +3,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "21.08.2026 16:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage",
-      "timestamp": "2026-08-21T12:16:21.664521",
+      "row_data": "21.08.2026 16:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage | x",
+      "timestamp": "2026-08-21T13:16:24.281335",
       "cells": [
         "21.08.2026 16:45",
         "SGWI",
@@ -12,7 +12,8 @@
         "12770",
         "Chemical/Products Tanker",
         "Holmengra Pilotboarding",
-        "Fonnesflaket Anchorage"
+        "Fonnesflaket Anchorage",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -21,7 +22,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "21.08.2026 23:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2026-08-21T12:16:21.927655",
+      "timestamp": "2026-08-21T13:16:24.559961",
       "cells": [
         "21.08.2026 23:30",
         "SGWI",
@@ -38,7 +39,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "23.08.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Haugsoytangen Anchorage",
-      "timestamp": "2026-08-21T12:16:22.205956",
+      "timestamp": "2026-08-21T13:16:24.838893",
       "cells": [
         "23.08.2026 00:01",
         "SGWI",
@@ -55,7 +56,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "23.08.2026 06:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Haugsoytangen Anchorage | Holmengra Pilotboarding",
-      "timestamp": "2026-08-21T12:16:22.502312",
+      "timestamp": "2026-08-21T13:16:25.096823",
       "cells": [
         "23.08.2026 06:00",
         "SGWI",
@@ -69,5 +70,5 @@
       "row_index": 3
     }
   ],
-  "last_check": "2026-08-21T12:16:38.833456"
+  "last_check": "2026-08-21T13:16:42.043519"
 }
