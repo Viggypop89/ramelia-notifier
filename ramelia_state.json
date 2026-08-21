@@ -4,7 +4,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "21.08.2026 16:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage",
-      "timestamp": "2026-08-21T09:54:30.469340",
+      "timestamp": "2026-08-21T10:51:43.517481",
       "cells": [
         "21.08.2026 16:45",
         "SGWI",
@@ -21,7 +21,7 @@
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "21.08.2026 23:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2026-08-21T09:54:30.734957",
+      "timestamp": "2026-08-21T10:51:43.754519",
       "cells": [
         "21.08.2026 23:30",
         "SGWI",
@@ -37,8 +37,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "23.08.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Holmengra Pilotboarding",
-      "timestamp": "2026-08-21T09:54:31.001004",
+      "row_data": "23.08.2026 00:01 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Haugsoytangen Anchorage",
+      "timestamp": "2026-08-21T10:51:43.985211",
       "cells": [
         "23.08.2026 00:01",
         "SGWI",
@@ -46,11 +46,28 @@
         "12770",
         "Chemical/Products Tanker",
         "Mongstad",
-        "Holmengra Pilotboarding"
+        "Haugsoytangen Anchorage"
       ],
       "table_index": 1,
       "row_index": 2
+    },
+    {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
+      "row_data": "23.08.2026 06:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Haugsoytangen Anchorage | Holmengra Pilotboarding",
+      "timestamp": "2026-08-21T10:51:44.219155",
+      "cells": [
+        "23.08.2026 06:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Haugsoytangen Anchorage",
+        "Holmengra Pilotboarding"
+      ],
+      "table_index": 1,
+      "row_index": 3
     }
   ],
-  "last_check": "2026-08-21T09:54:47.454385"
+  "last_check": "2026-08-21T10:52:00.695128"
 }
