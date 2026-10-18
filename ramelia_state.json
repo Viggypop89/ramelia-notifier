@@ -3,25 +3,8 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "19.10.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Slovag Industrial area",
-      "timestamp": "2026-10-18T18:11:27.349580",
-      "cells": [
-        "19.10.2026 12:00",
-        "SGWI",
-        "RAMELIA",
-        "12770",
-        "Chemical/Products Tanker",
-        "Mongstad",
-        "Slovag Industrial area"
-      ],
-      "table_index": 1,
-      "row_index": 0
-    },
-    {
-      "dispatch_area": "Kvitsøy losformidling",
-      "station": "-- All --",
       "row_data": "19.10.2026 20:30 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
-      "timestamp": "2026-10-18T18:11:27.504780",
+      "timestamp": "2026-10-18T20:53:07.294811",
       "cells": [
         "19.10.2026 20:30",
         "SGWI",
@@ -32,15 +15,32 @@
         "Mongstad"
       ],
       "table_index": 1,
+      "row_index": 0
+    },
+    {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
+      "row_data": "20.10.2026 12:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Slovag Industrial area",
+      "timestamp": "2026-10-18T20:53:07.502784",
+      "cells": [
+        "20.10.2026 12:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Mongstad",
+        "Slovag Industrial area"
+      ],
+      "table_index": 1,
       "row_index": 1
     },
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "20.10.2026 01:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Slovag Industrial area | Holmengra Pilotboarding",
-      "timestamp": "2026-10-18T18:11:27.652195",
+      "row_data": "21.10.2026 01:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Slovag Industrial area | Holmengra Pilotboarding",
+      "timestamp": "2026-10-18T20:53:07.690577",
       "cells": [
-        "20.10.2026 01:00",
+        "21.10.2026 01:00",
         "SGWI",
         "RAMELIA",
         "12770",
@@ -52,5 +52,5 @@
       "row_index": 2
     }
   ],
-  "last_check": "2026-10-18T18:11:44.879689"
+  "last_check": "2026-10-18T20:53:24.138198"
 }
