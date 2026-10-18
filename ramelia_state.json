@@ -3,16 +3,17 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
-      "row_data": "18.10.2026 13:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Mongstad",
-      "timestamp": "2026-10-18T06:38:43.887566",
+      "row_data": "18.10.2026 12:45 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Holmengra Pilotboarding | Fonnesflaket Anchorage | x",
+      "timestamp": "2026-10-18T11:46:45.588067",
       "cells": [
-        "18.10.2026 13:00",
+        "18.10.2026 12:45",
         "SGWI",
         "RAMELIA",
         "12770",
         "Chemical/Products Tanker",
         "Holmengra Pilotboarding",
-        "Mongstad"
+        "Fonnesflaket Anchorage",
+        "x"
       ],
       "table_index": 1,
       "row_index": 0
@@ -20,8 +21,25 @@
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
+      "row_data": "18.10.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Fonnesflaket Anchorage | Mongstad",
+      "timestamp": "2026-10-18T11:46:45.814067",
+      "cells": [
+        "18.10.2026 20:00",
+        "SGWI",
+        "RAMELIA",
+        "12770",
+        "Chemical/Products Tanker",
+        "Fonnesflaket Anchorage",
+        "Mongstad"
+      ],
+      "table_index": 1,
+      "row_index": 1
+    },
+    {
+      "dispatch_area": "Kvitsøy losformidling",
+      "station": "-- All --",
       "row_data": "19.10.2026 06:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Mongstad | Slovag Industrial area",
-      "timestamp": "2026-10-18T06:38:44.089825",
+      "timestamp": "2026-10-18T11:46:46.012926",
       "cells": [
         "19.10.2026 06:00",
         "SGWI",
@@ -32,13 +50,13 @@
         "Slovag Industrial area"
       ],
       "table_index": 1,
-      "row_index": 1
+      "row_index": 2
     },
     {
       "dispatch_area": "Kvitsøy losformidling",
       "station": "-- All --",
       "row_data": "19.10.2026 20:00 | SGWI | RAMELIA | 12770 | Chemical/Products Tanker | Slovag Industrial area | Holmengra Pilotboarding",
-      "timestamp": "2026-10-18T06:38:44.279816",
+      "timestamp": "2026-10-18T11:46:46.212847",
       "cells": [
         "19.10.2026 20:00",
         "SGWI",
@@ -49,8 +67,8 @@
         "Holmengra Pilotboarding"
       ],
       "table_index": 1,
-      "row_index": 2
+      "row_index": 3
     }
   ],
-  "last_check": "2026-10-18T06:39:00.192508"
+  "last_check": "2026-10-18T11:47:03.191547"
 }
